@@ -1,70 +1,83 @@
 import numpy as np
 import matplotlib.pyplot as plt
 
-# Fonksiyonlar
-def enerji_verimliligi(bor_katkisi):
-    """
-    Bor katkısına bağlı enerji verimliliği hesaplama.
-    Başlangıç verimliliği %85, bor katkısı başına %0.375 artış.
-    """
-    if bor_katkisi < 0:
-        raise ValueError("Bor katkısı negatif olamaz.")
-    return 85 + bor_katkisi * 0.375
+# Sabitler
+g = 9.81  # Yerçekimi ivmesi (m/s²)
+isp = 450  # Spesifik impuls (saniye)
+fuel_mass = 100000  # Başlangıç yakıt kütlesi (kg)
+dry_mass = 20000  # Gemi kuru kütlesi (kg)
+engine_power = 5000  # Motor gücü (kW)
+radiation_limit = 2.0  # Radyasyon limiti (Sv/saat)
+energy_efficiency = 0.8  # Enerji sistem verimliliği
 
-def enerji_tasarrufu(verimlilik):
-    """
-    Verimliliğe bağlı enerji tasarrufu hesaplama.
-    Tasarruf başlangıç verimliliği (%85) ile karşılaştırılır.
-    """
-    return (verimlilik - 85) / 7.5
+# Simülasyon parametreleri
+time = np.linspace(0, 5000, 1000)  # Zaman (saniye)
+dt = time[1] - time[0]  # Zaman adımı
+fuel = np.zeros_like(time)  # Yakıt miktarı
+speed = np.zeros_like(time)  # Hız
+radiation = np.zeros_like(time)  # Radyasyon seviyesi
+energy = np.zeros_like(time)  # Enerji seviyesi
+oxygen = np.zeros_like(time)  # Oksijen seviyesi
+fuel[0] = fuel_mass
+energy[0] = engine_power * energy_efficiency  # Başlangıç enerjisi
+oxygen[0] = 100  # Başlangıç oksijen seviyesi (örnek birim)
 
-def grafik_ciz(bor_degerleri, verimlilik_degerleri, tasarruf_degerleri, bor_katkisi_orani, toplam_verimlilik):
-    """
-    Bor katkısına bağlı enerji verimliliği ve tasarruf grafiği çizer.
-    """
-    plt.figure(figsize=(12, 6))
-    plt.plot(bor_degerleri, verimlilik_degerleri, label="Verimlilik (%)", color="blue", linewidth=2)
-    plt.plot(bor_degerleri, tasarruf_degerleri, label="Enerji Tasarrufu (%)", color="green", linewidth=2)
-    plt.scatter(bor_katkisi_orani, toplam_verimlilik, color="red", label=f"Bor Katkısı: %{bor_katkisi_orani}", zorder=5)
-    plt.axhline(85, color="gray", linestyle="--", label="Başlangıç Verimliliği (%85)")
-    for x in range(0, 21, 5):
-        plt.axvline(x, color="purple", linestyle="--", alpha=0.5, label=f"Bor Katkısı %{x}" if x == 0 else None)
-    plt.title("Bor Katkısının Enerji Verimliliği ve Tasarruf Üzerine Etkisi", fontsize=14, fontweight="bold")
-    plt.xlabel("Bor Katkısı (%)", fontsize=12)
-    plt.ylabel("Yüzde (%)", fontsize=12)
-    plt.grid(alpha=0.3)
-    plt.legend(fontsize=10)
-    plt.tight_layout()
-    plt.show()
+# Simülasyon
+for i in range(1, len(time)):
+    if fuel[i - 1] > 0:  # Yakıt varsa
+        fuel_consumption = engine_power * dt / (isp * g)  # Yakıt tüketimi (kg)
+        fuel[i] = fuel[i - 1] - fuel_consumption
+        if fuel[i] < 0:  # Yakıt tükenirse sıfırla
+            fuel[i] = 0
+        thrust = isp * g * fuel_consumption  # İtki gücü (N)
+        acceleration = thrust / (dry_mass + fuel[i])  # İvme (m/s²)
+        speed[i] = speed[i - 1] + acceleration * dt  # Hız güncellemesi
+    else:
+        speed[i] = speed[i - 1]  # Yakıt yoksa hız sabit
 
-# Ana Program
-def main():
-    try:
-        # Kullanıcıdan bor katkısı oranı al
-        bor_katkisi_orani = float(input("Lütfen Bor Katkısı Oranını (% olarak) Girin: "))
-        if bor_katkisi_orani < 0:
-            raise ValueError("Bor katkısı negatif olamaz. Lütfen geçerli bir değer girin.")
-        
-        # Hesaplamalar
-        toplam_verimlilik = enerji_verimliligi(bor_katkisi_orani)
-        toplam_tasarruf = enerji_tasarrufu(toplam_verimlilik)
+    # Enerji seviyesi
+    energy_loss = engine_power * (1 - energy_efficiency) * dt  # Enerji kaybı
+    energy[i] = energy[i - 1] - energy_loss
+    if energy[i] < 0:  # Enerji tükenirse sıfırla
+        energy[i] = 0
 
-        # Sonuçları Yazdır
-        print(f"\nBor Katkısı: {bor_katkisi_orani:.2f}%")
-        print(f"Toplam Verimlilik: {toplam_verimlilik:.2f}%")
-        print(f"Toplam Enerji Tasarrufu: {toplam_tasarruf:.2f}%\n")
-        
-        # Bor katkısı aralığı ve hesaplamalar
-        bor_degerleri = np.linspace(0, 20, 100)
-        verimlilik_degerleri = enerji_verimliligi(bor_degerleri)
-        tasarruf_degerleri = enerji_tasarrufu(verimlilik_degerleri)
+    # Radyasyon seviyesi
+    radiation[i] = radiation[i - 1] + 0.01 * speed[i] * dt  # Hızla artan radyasyon
 
-        # Grafik Çizimi
-        grafik_ciz(bor_degerleri, verimlilik_degerleri, tasarruf_degerleri, bor_katkisi_orani, toplam_verimlilik)
+    # Oksijen tüketimi
+    oxygen_consumption = 0.001 * dt  # Oksijen tüketim oranı
+    oxygen[i] = oxygen[i - 1] - oxygen_consumption
+    if oxygen[i] < 0:  # Oksijen tükenirse sıfırla
+        oxygen[i] = 0
 
-    except ValueError as e:
-        print(f"\nHatalı giriş: {e}\n")
+# Grafikler
+plt.figure(figsize=(12, 8))
 
-# Program Çalıştırma
-if __name__ == "__main__":
-    main()
+# Yakıt, Hız ve Enerji
+plt.subplot(3, 1, 1)
+plt.plot(time, fuel, label="Yakıt (kg)", color='blue')
+plt.plot(time, energy, label="Enerji (kW)", color='green')
+plt.title("Yakıt ve Enerji Yönetimi")
+plt.xlabel("Zaman (saniye)")
+plt.ylabel("Miktar")
+plt.legend()
+
+# Hız
+plt.subplot(3, 1, 2)
+plt.plot(time, speed, label="Hız (m/s)", color='orange')
+plt.title("Gemi Hızlanması")
+plt.xlabel("Zaman (saniye)")
+plt.ylabel("Hız (m/s)")
+plt.legend()
+
+# Radyasyon ve Oksijen
+plt.subplot(3, 1, 3)
+plt.plot(time, radiation, label="Radyasyon Seviyesi (Sv)", color='red')
+plt.plot(time, oxygen, label="Oksijen Seviyesi", color='purple')
+plt.title("Radyasyon ve Oksijen Yönetimi")
+plt.xlabel("Zaman (saniye)")
+plt.ylabel("Miktar")
+plt.legend()
+
+plt.tight_layout()
+plt.show()
