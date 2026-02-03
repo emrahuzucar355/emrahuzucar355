@@ -43,7 +43,6 @@ AI Alignment: Leveraging Codex/Gemini as a Reflection of Comprehension interface
 🛰️ "The universe is not a volume to be filled, but a surface to be aligned with."
 
 # Örnek Testler
-print("Test Sonuçları:")
-for v in [1.5, 2.0, 2.5]:
-    efficiency = electrolysis_efficiency(v, current_density)
-    print(f"Voltaj: {v} V, Akım Yoğunluğu: {current_density} A/cm² -> Verimlilik: {efficiency:.2f}")
+https://fazz4webb1.netlify.app/
+https://fazz4-live-organism.netlify.app/
+https://fazz4-military-core.netlify.app/
