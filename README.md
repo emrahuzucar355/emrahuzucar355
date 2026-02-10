@@ -46,3 +46,13 @@ AI Alignment: Leveraging Codex/Gemini as a Reflection of Comprehension interface
 https://fazz4webb1.netlify.app/
 https://fazz4-live-organism.netlify.app/
 https://fazz4-military-core.netlify.app/
+### 🧬 Live Proofs & Simulations (Canlı Kanıtlar)
+
+*   **🐍 Core Simulation Code:** [Fazz4-Asymptotic-Framework Repository](https://github.com/emrahuzucar355/Fazz4-Asymptotic-Framework)
+    *(Run the "Endothermic Harvest" simulation locally with Python)*
+
+*   **🫀 Live Organism Interface:** [Fazz4 Dashboard](https://fazz4-live-organism.netlify.app/)
+    *(Visualizing the Derzz Protocol's biological reflex)*
+
+*   **🛰️ Deep Space Telemetry:** [Webb-1 Interface](https://fazz4webb1.netlify.app/)
+    *(Cosmological Horizon Data Processing)*
