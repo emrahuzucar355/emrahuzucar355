@@ -62,3 +62,6 @@ https://fazz4-military-core.netlify.app/
 ![Fazz-4 Efficiency Graph](fazz4_efficiency_proof.png)
 
 > **Analysis:** The sharp rise indicates the activation of the Derzz Protocol. The plateau at the peak (5.0x) demonstrates the "Cybernetic Balance" (Panic Valve) preventing thermal runaway.
+---
+⚖️ **Governance:** This project operates under the strict guidelines of the [Fazz-4 Constitution (v1.0.0)](CONSTITUTION.md).
+---
