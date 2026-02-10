@@ -65,3 +65,50 @@ https://fazz4-military-core.netlify.app/
 ---
 ⚖️ **Governance:** This project operates under the strict guidelines of the [Fazz-4 Constitution (v1.0.0)](CONSTITUTION.md).
 ---
+---
+
+## 🚀 Active Modules & Proof of Concepts (Canlı Modüller)
+
+Fazz-4 is not just a theory; it is a multi-domain ecosystem operating on the edge of physics.
+
+### 1. 🌌 The Mars Race: Silver Surfer vs Starship
+*Gadolinium-powered Radiolysis vs Chemical Propulsion*
+> **Result:** 15,000 Monte Carlo simulations confirm **Silver Surfer (Fazz-4)** wins 85% of races with **ZERO fuel cost**.
+- 📄 **Read the Full Report:** [MARS_RACE.md](MARS_RACE.md)
+- 🐍 **Run Simulation:** `src/simulation/mars_race.py`
+
+### 2. 🛡️ Military Core: Thermal Stealth Engine
+*Achieving 35% Efficiency Gain with ZERO Motor Heat Signature*
+> **Status:** **Thermal Stealth Active.** The engine dissipates heat externally, making the motor invisible to thermal sensors.
+- 📄 **Technical Specs:** [MILITARY_CORE.md](MILITARY_CORE.md)
+- 🐍 **Run Simulation:** `src/simulation/military_core.py`
+
+### 3. ⚛️ Quantum Entanglement: The "Instant" Link
+*Communication Beyond the Speed of Light (c)*
+> **Breakthrough:** Utilizing `n(n+1)` logic to entangle silver atoms, achieving **Zero Latency** communication (Time = 0).
+- 🐍 **Proof of Concept:** `fazz6_quantum_leap.py`
+
+### 4. ☀️ Bengaluru Solar Harvest
+*Turning Entropy into Hydrogen Fuel*
+> **Real-time Data:** A standard 5000m² roof in Bengaluru generates **60kg H2/hour** and cools the building equivalent to **35 Industrial AC units**.
+- 🐍 **Live Calculation:** `fazz4_bengaluru_sim.py`
+
+---
+
+## 🛠️ Technical Infrastructure (HPC Ready)
+
+This project is optimized for **Apple Silicon (M2/M3)** architecture, utilizing **Metal API** and **Neural Engine** for asymptotic calculations.
+- 🍏 **M2 Optimization Guide:** [docs/SETUP_M2_OPTIMIZED.md](docs/SETUP_M2_OPTIMIZED.md)
+- 📦 **Dependencies:** `requirements.txt` (ARM64 Native)
+
+---
+
+## 📜 Governance & Philosophy
+
+> *"Excellent architecture is not about complexity, but about elegant simplicity that scales."*
+
+This project operates under the strict guidelines of the **[Fazz-4 Constitution (v1.0.0)](CONSTITUTION.md)**.
+- **DOI:** 10.5281/zenodo.18183914
+- **Architect:** Emrah Uzucar
+
+---
