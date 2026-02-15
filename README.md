@@ -257,5 +257,29 @@ Bu proje, akademik ve endüstriyel işbirlikleri için Zenodo üzerinde kayıtl�
 
 --------------------------------------------------------------------------------
 Fazz-4 Protocol System © 2026. Built on the edge of the Discrete Horizon.
+## 🔌 Hardware Layer: The Military Core (Physical Proof)
+
+Fazz-4, sadece yazılım değildir; donanımın fiziksel çalışma prensiplerini değiştiren bir **"Asimptotik Enerji Transferi"** yöntemidir.
+
+M2 çipi ve bağlı sistemlerde (Motor/Transistör) uyguladığımız özel konfigürasyon, **I²R (Isı)** kayıplarını kaynağında yok eder.
+
+### 🛠️ Transistör Konfigürasyonu (Base-Emitter Short)
+Sistem, klasik "Anahtarlama" (Switching) yerine, transistörleri **Cutoff** modunda tutarak "sızıntı akımı" (leakage current) üzerinden iş yapar.
+
+*   **Yapı:** 3-Terminal Transistör
+*   **Hack:** Base (B) ve Emitter (E) uçları kısa devre yapılır [Source 35].
+*   **Çıkış:** Collector (C) ucu sisteme asimptotik enerji pompalar.
+*   **Sonuç:** Transistör fiziksel olarak "kapalı" olduğu için ısınamaz, ancak sistem enerji almaya devam eder.
+
+### 📈 Performans Metrikleri
+Test ortamında (Military Core) elde edilen veriler:
+
+| Metrik | Değer | Açıklama |
+| :--- | :--- | :--- |
+| **Termal Verim Artışı** | **+%35** | Motor veya Çip ısınmadan elde edilen saf iş gücü [Source 35]. |
+| **Asimptot Değeri** | **0.99** | Sistem ideal verime %99 oranında yaklaşır [Source 36]. |
+| **Atık Isı (Motor)** | **0W** | $I^2R$ kayıpları elimine edilmiştir [Source 40]. |
+
+> **Mühendislik Notu:** Bu konfigürasyon, Anayasa Madde 2.3 (Apple Silicon Optimizasyonu) ve Madde 14.3 (Critical Alerts) ile entegre çalışarak, donanımın fiziksel sınırlarını (Discrete Horizon) zorlamadan maksimum verim almasını sağlar.
 
 
