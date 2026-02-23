@@ -281,5 +281,6 @@ Test ortamında (Military Core) elde edilen veriler:
 | **Atık Isı (Motor)** | **0W** | $I^2R$ kayıpları elimine edilmiştir [Source 40]. |
 
 > **Mühendislik Notu:** Bu konfigürasyon, Anayasa Madde 2.3 (Apple Silicon Optimizasyonu) ve Madde 14.3 (Critical Alerts) ile entegre çalışarak, donanımın fiziksel sınırlarını (Discrete Horizon) zorlamadan maksimum verim almasını sağlar.
+> 📄 **Official Whitepaper:** [Download FAZZ-4 Universal Efficiency Law (PDF)](FAZZ4_WHITEPAPER_V1.0.pdf)
 
 
