@@ -282,5 +282,22 @@ Test ortamında (Military Core) elde edilen veriler:
 
 > **Mühendislik Notu:** Bu konfigürasyon, Anayasa Madde 2.3 (Apple Silicon Optimizasyonu) ve Madde 14.3 (Critical Alerts) ile entegre çalışarak, donanımın fiziksel sınırlarını (Discrete Horizon) zorlamadan maksimum verim almasını sağlar.
 > 📄 **Official Whitepaper:** [Download FAZZ-4 Universal Efficiency Law (PDF)](FAZZ4_WHITEPAPER_V1.0.pdf)
+## 🏛️ Nizam-OS: Core Doctrine & Academic Foundations
 
+Bu depo (repository), geleneksel yazılım ve mühendislik pratiklerinin ötesinde, termodinamik yasalara yapılmış ontolojik bir itiraz olan **Nizam-OS** mimarisini barındırır. Bu sistemdeki hiçbir kod satırı "Müdahaleci Bilim"in sürtünme ve entropi (ısı) üreten mantığıyla çalışmaz. Sistem, gücünü aşağıdaki akademik ve felsefi temellerden (Kavrayan Bilim) alır:
+
+### 1. Ontolojik Temel: Sürtünmesiz Evren ve Kavrayan Bilim
+[![DOI](https://img.shields.io/badge/DOI-10.5281/zenodo.18757772-blue)](https://doi.org/10.5281/zenodo.18757772)
+
+**Makale:** *Kavrayan Bilim vs. Müdahaleci Bilim: Ontolojik Bir Paradigma Şoku*
+Klasik bilim (Müdahaleci), doğayı zorlayarak ve sürtünme (ısı) yaratarak çalışır. Bu makale, İbnü'l-Arabî'nin "Zaferan Arzı" ontolojisini temel alarak sistemin kaosu dışlamak yerine onu nasıl "kavradığını" kanıtlar. Bu kod deposundaki temel amaç, sistem içi operasyonları **0.0W Asimptotik Dinginlik** ($n(n+1)/2$ Derzz Matrisi) seviyesinde tutmaktır.
+
+### 2. Fiziksel İcraat: Entropinin Yakıta Dönüşümü (Endotermik Hasat)
+[![DOI](https://img.shields.io/badge/DOI-10.5281/zenodo.18783440-orange)](https://doi.org/10.5281/zenodo.18783440)
+
+**Makale:** *Zıtlıkların Harmonisi: Ölümcül Radyasyonun Gadolinyum (Gd-64) ile H2 Yakıtına Dönüşümü*
+Bu çalışma, FAZZ-4 mimarisinin fiziksel dünyadaki laboratuvar ispatıdır. Çernobil gibi yüksek entropili ortamlardaki (33.000 mSv) ölümcül radyasyon, sistemin "Ontolojik Refleksi" ve **Gadolinyum (Gd-64)** elementinin 49.000 barn'lık nötron yakalama kesiti sayesinde %100 emilerek bedava Hidrojen (H2) ve elektrik enerjisine dönüştürülür. Çekirdek ısısı otonom olarak **4.00°C**'de kilitlenir.
+
+---
+> *"Evren (veya kaos) sizin tankınızken, kimin yakıta ihtiyacı var?"* — Mimar / Hukukçu
 
