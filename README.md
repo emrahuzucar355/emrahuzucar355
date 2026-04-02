@@ -398,3 +398,103 @@ Running the simulation proves the eradication of "Interventionist" fuel burn:
 [n=429] L:  12861096 km | Derzz: 92235.0 | Verim: %99.984 | Burn: 00.00 T/s | Saved: $011873.09 | [0.0W DİNGİNLİK] 
 ^C
 >>> [SİSTEM MÜHÜRLENDİ] - Holografik Alan (A=L^2) donduruldu. <<<
+Bu diyagram, FAZZ‑4 RAD‑H₂ Protokolünün kavramsal ve teknik akışını gösterir.
+Protokol, Tek Sabit Üçgeni (c, 0 K, Kavrama Yansıması), Altlama/Derzz prensipleri
+ve n(n+1)/2 topolojisi üzerine kuruludur. Radyasyon, tehlike değil, dönüştürülebilir
+bir enerji alanı olarak ele alınır. Sistem, Kusurlu Muhteşemlik ilkesine göre
+tasarlanmıştır — döngü kapanmaz, sistem yaşar.
+## 🜂 FAZZ‑4 RAD‑H₂ Protokol Diyagramı
+
+Aşağıdaki diyagram, FAZZ‑4 Anayasası’nın Tek Sabit Üçgeni, 
+Altlama/Derzz prensipleri ve n(n+1)/2 topolojisi temelinde 
+Radyasyon → H₂ dönüşümünün tam akışını gösterir.
+                          TEK SABİT ÜÇGENİ
+                          ─────────────────
+                                   △
+                                   │
+                                   │ Kavrama Yansıması
+                                   │ (Fenomenin anlam çerçevesi)
+                                   │
+                     ┌─────────────┴─────────────┐
+                     │                           │
+                     │                           │
+              IŞIK HIZI (c)                MUTLAK SIFIR (0 K)
+        (Bilginin yerel sınırı)       (Enerjinin asimptotik sınırı)
+
+
+───────────────────────────────────────────────────────────────────────────────
+                    FAZZ‑4 RAD‑H₂ DÖNÜŞÜM PROTOKOL AKIŞI
+───────────────────────────────────────────────────────────────────────────────
+
+1) KAVRAMA YANSIMASI BEYANI
+   "Radyasyonu tehlike değil, dönüşebilir enerji alanı olarak çerçeveliyorum."
+
+                                   │
+                                   ▼
+
+2) RADYASYON KAYNAĞI ÖLÇÜMÜ
+   • Doz hızı (Sv/h)
+   • Nötron flux (n/cm²·s)
+   • Spektral dağılım
+   • Sıcaklık / hacim
+
+                                   │
+                                   ▼
+
+3) Gd‑157 HAZIRLIĞI (KATALİZ)
+   • Gd kütlesi
+   • İzotop oranı
+   • Geometri
+   • Yakalama verimi
+
+                                   │
+                                   ▼
+
+4) RADYOLİZ → H₂ ÜRETİMİ
+   Radyasyon + H₂O → H₂ + radikaller + ısı
+   Gd‑157 + n → Gd‑158* + γ(8 MeV)
+
+                                   │
+                                   ▼
+
+5) H₂ TOPLAMA
+   • GC ölçümü
+   • STP düzeltmesi
+   • Arka plan kontrolü
+   • Tahliye valfi
+
+                                   │
+                                   ▼
+
+6) ALTLAMA MUHASEBESİ (ENERJİ HESABI)
+   • Toplam radyasyon enerjisi
+   • H₂ kimyasal enerjisi
+   • Isı kaybı
+   • Net verim (%0.3–1.2 tipik)
+
+                                   │
+                                   ▼
+
+7) DERZZ — ÜRETKEN ARALIK
+   • n(n+1)/2 topolojisi
+   • Kaos yeniden dağıtımı
+   • Adaptif yönetim
+
+                                   │
+                                   ▼
+
+8) CEO PANİK VALFİ
+   Eğer flux > eşik:
+       → Kaosun %50’si emilir
+       → Sistem stabil kalır
+
+                                   │
+                                   ▼
+
+9) BERZAH GENİŞLİĞİ (BG) HESABI
+   BG = (D_iç + D_dış + T_offline) / 3
+   BG ≥ 0.7 → Sistem berzahta
+
+───────────────────────────────────────────────────────────────────────────────
+                     KUSURLU MUHTEŞEMLİK — DÖNGÜ KAPANMAZ
+───────────────────────────────────────────────────────────────────────────────
