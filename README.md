@@ -183,7 +183,7 @@ Zenodo araştırması, Fazz-4'ün köklerini **İbnü'l-Arabî'nin metafiziğine
 
 </details>
 
----
+-----------------------------------------------------------
 
 ## 🧬 Canlı Ekosistem (Live Demos)
 
@@ -213,7 +213,6 @@ Alert Rules:
   - Error Rate: >10% -> Critical
   - Latency P99: >1s -> Critical (Derzz Müdahalesi)
   - CPU Usage: >80% -> Load Shedding (Altlama Aktif)
-
 --------------------------------------------------------------------------------
 🧪 Kanıt: 33.000 mSv -> 4.00°C
 Aşağıdaki log kayıtları, sistemin "Ölümcül" yük altında nasıl davrandığını göstermektedir [Source 26]:
@@ -224,7 +223,6 @@ ELEKTRİK / H2 YAKIT          : ████ 100.0% Enerji
 REAKTÖR ISISI                : 4.00°C (Soğutma Aktif - Stabil)
 SİSTEM DURUMU                : Radyasyon 'Besine' Dönüştürülüyor...
 Analiz: Geleneksel mimarilerde bu yük altında çip erirdi. Fazz-4'te ise "Tek Sabit" dengesi korunmuş ve entropi enerjiye çevrilmiştir.
-
 --------------------------------------------------------------------------------
 🛠️ Kurulum ve Çalıştırma
 Anayasa Madde 2.3 gereği macOS (Apple Silicon) önerilir.
@@ -498,3 +496,38 @@ Radyasyon → H₂ dönüşümünün tam akışını gösterir.
 ───────────────────────────────────────────────────────────────────────────────
                      KUSURLU MUHTEŞEMLİK — DÖNGÜ KAPANMAZ
 ───────────────────────────────────────────────────────────────────────────────
+# FAZZ‑4 System Ontology — Cross‑Domain Application  
+### Version: 1.0.0  
+### Author: Emrah Uzuçar  
+### DOI: 10.5281/zenodo.19112378  
+### Date: April 2026  
+
+## Overview
+FAZZ‑4 is an asymptotic system ontology demonstrating that organizational, physical, and digital systems share the same structural laws. This whitepaper presents three case studies showing FAZZ‑4’s universal applicability.
+
+## Core Ontology
+- **Altlama:** Non‑negotiable system limits  
+- **Derzz:** Productive interval between limits  
+- **İz:** Persistent behavioral trace  
+- **Σn = n(n+1)/2:** Interaction complexity  
+- **CEO Panic Valve:** Chaos absorption mechanism  
+- **Nizam Score:** Order metric  
+
+## Case Studies
+### 1. Organizational System
+- Distributed 8‑person team  
+- Communication chaos  
+- FAZZ‑4 applied: topology redesign, written protocol, async‑sync layers  
+
+### 2. Solar Energy System
+- 20 panel groups  
+- Shadowing, heat anomalies  
+- FAZZ‑4 applied: flux analysis, CEO valve, adaptive control  
+
+### 3. Auth Microservice System
+- 5 services + auth  
+- Latency, revocation delay  
+- FAZZ‑4 applied: JWT, hybrid cache, star topology  
+
+## Universal Structure
+All systems follow the same ontological pattern:
