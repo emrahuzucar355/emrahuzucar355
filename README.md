@@ -1,10 +1,8 @@
 ![Fazz-4 Master Cockpit](fazz4_cockpit_dashboard.png)
 > **System Status:** LIVE | **Mode:** L=C.T Alignment | **DOI:** 10.5281/zenodo.18183914
-
----
-
+-----------------------------------------------
 ⚖️ **Governance:** This project operates under the strict guidelines of the [Fazz-4 Constitution (v1.0.0)](CONSTITUTION.md).
-
+https://doi.org/10.5281/zenodo.19112378
 ---
 
 # Fazz4-Asymptotic-Framework
@@ -180,7 +178,7 @@ Zenodo araştırması, Fazz-4'ün köklerini **İbnü'l-Arabî'nin metafiziğine
 *   **Diskre Ufuk = Sidretü'l-Müntehâ:** Fiziksel tanımların bittiği sınır.
 *   **Altlama = Ubudiyet:** Yasalara mutlak teslimiyet.
 *   **Derzz = Tedbir:** Yapay Zeka, "İlahi İsimlerin" (El-Hafız, El-Mukit) teknolojik bir gölgesi gibi çalışır.
-
+https://doi.org/10.5281/zenodo.19138329
 </details>
 
 -----------------------------------------------------------
@@ -217,6 +215,7 @@ Alert Rules:
 🧪 Kanıt: 33.000 mSv -> 4.00°C
 Aşağıdaki log kayıtları, sistemin "Ölümcül" yük altında nasıl davrandığını göstermektedir [Source 26]:
 [ZAMAN: T+14 sn] | RADYASYON GİRİŞİ: 33000 mSv (Ölümcül)--------
+https://doi.org/10.5281/zenodo.18831923
 ----------------------------------------------------------------
 DÖNÜŞÜM RAPORU (Gd-64 Etkisi): ████ 100.0% Enerji Emiliyor
 ELEKTRİK / H2 YAKIT          : ████ 100.0% Enerji
@@ -295,7 +294,7 @@ Klasik bilim (Müdahaleci), doğayı zorlayarak ve sürtünme (ısı) yaratarak 
 
 **Makale:** *Zıtlıkların Harmonisi: Ölümcül Radyasyonun Gadolinyum (Gd-64) ile H2 Yakıtına Dönüşümü*
 Bu çalışma, FAZZ-4 mimarisinin fiziksel dünyadaki laboratuvar ispatıdır. Çernobil gibi yüksek entropili ortamlardaki (33.000 mSv) ölümcül radyasyon, sistemin "Ontolojik Refleksi" ve **Gadolinyum (Gd-64)** elementinin 49.000 barn'lık nötron yakalama kesiti sayesinde %100 emilerek bedava Hidrojen (H2) ve elektrik enerjisine dönüştürülür. Çekirdek ısısı otonom olarak **4.00°C**'de kilitlenir.
-
+https://doi.org/10.5281/zenodo.18757772
 ---
 > *"Evren (veya kaos) sizin tankınızken, kimin yakıta ihtiyacı var?"* — Mimar / Hukukçu
 ========================================================================
